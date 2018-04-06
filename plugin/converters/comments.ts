@@ -2,22 +2,13 @@ const commentsRegex = /\/\/@H([0-7]) (.*)\n\/\/@description (.*)\n/g;
 
 function getComments(content) {
     let m, matches = [];
-
     do {
         m = commentsRegex.exec(content);
         if (m) {
             const [full, level, header, description] = m;
-
-            // console.log(m)
-            matches.push({
-                full,
-                level,
-                header,
-                description
-            });
+            matches.push({ full, level, header, description });
         }
     } while (m);
-
     return matches;
 }
 
