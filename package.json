@@ -1,6 +1,6 @@
 {
-  "name": "adoc-ext-include-scss",
-  "version": "1.0.0",
+  "name": "@asciidoctor-extender/adoc-ext-include-scss",
+  "version": "0.1.0-BETA",
   "description": "An asciidoctor.js extension for commented scss variable files inclusion. (plugin for asciidoctor.js-extender)",
   "main": "index.js",
   "scripts": {
